@@ -98,9 +98,10 @@ int main() {
 
   if (counter < CompCounter)
     cout << "Computer won the game." << endl;
-  if (counter == CompCounter)
-    cout << "It's a tie!" << endl;
-
+  if (counter == CompCounter){
+    cout << endl;
+    cout << "The game is a tie!" << endl;
+  }
   
 }
 
