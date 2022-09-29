@@ -18,64 +18,59 @@ int main()
 int month;
 int day; 
 int People;
-
-/*
-char Jan = 1;
-char Feb = 2;
-char Mar = 3;
-char Apr = 4;
-char May = 5;
-char June = 6;
-char July = 7;
-char Aug = 8;
-char Sep = 9;
-char Oct = 10;
-char Nov = 11;
-char Dec = 12;
-*/
-
-string Jan;
-string Feb;
-string Mar;
-string Apr;
-string May;
-string June;
-string July;
-string Aug;
-string Sep;
-string Oct;
-string Nov;
-string Dec;
 string input;
-  
-
-  
 cin >> People;
+
+
   
 for (int i = 0; i < People; i++)
   {
+
   if (input == "Jan"){
   month = 1;
-    }
+  }
   else if (input == "Feb"){
   month = 2;
-    }
+  }
   else if (input == "Mar"){
   month = 3;
-    }
-//  char month;
+  }    
+  else if (input == "Apr"){
+    month =4;
+  }
+  else if (input == "May"){
+    month =5;
+  }
+  else if (input == "Jun"){
+    month =6;
+  }
+  else if (input == "Jul"){
+    month =7;
+  }
+  else if (input == "Aug"){
+    month =8;
+  }
+  else if (input == "Sep"){
+    month =9;
+  }
+  else if (input == "Oct"){
+    month =10;
+  }
+  else if (input == "Nov"){
+    month =11;
+  }
+  else if (input == "Dec"){
+    month =12;
+  }
+
   selection(day, month);
-    
-  //cout << "Enter your month" << endl;
+  cout << "Enter your month" << endl;
   cin >> input;
-//  cout << endl;
-  //cout << "Enter your Day" << endl;
+  cout << endl;
+  cout << "Enter your Day" << endl;
   cin >> day;
- // cout << endl;
-
-
-
-//cout << result;
+  cout << endl;
+  selection(day, month);
     }
 }
 
@@ -83,24 +78,7 @@ for (int i = 0; i < People; i++)
 ///////// Variable
 int selection (int day, int month)
 {
-char Result;
-/*
-char Jan = 1;
-char Feb = 2;
-char Mar = 3;
-char Apr = 4;
-char May = 5;
-char June = 6;
-char July = 7;
-char Aug = 8;
-char Sep = 9;
-char Oct = 10;
-char Nov = 11;
-char Dec = 12;
-*/
-//char month;  
-//int day;
-  
+ 
 switch (month)
 {
 
@@ -190,5 +168,45 @@ switch (month)
   
   
 }
-return Result;
+return month;
 }
+
+
+/*
+if (input == "Jan"){
+  month = 1;
+  }
+  else if (input == "Feb"){
+  month = 2;
+  }
+  else if (input == "Mar"){
+  month = 3;
+  }    
+  else if (input == "Apr"){
+    month =4;
+  }
+  else if (input == "May"){
+    month =5;
+  }
+  else if (input == "Jun"){
+    month =6;
+  }
+  else if (input == "Jul"){
+    month =7;
+  }
+  else if (input == "Aug"){
+    month =8;
+  }
+  else if (input == "Sep"){
+    month =9;
+  }
+  else if (input == "Oct"){
+    month =10;
+  }
+  else if (input == "Nov"){
+    month =11;
+  }
+  else if (input == "Dec"){
+    month =12;
+  }
+*/
