@@ -9,8 +9,8 @@ using namespace std;
 
 
 int selection (int day, int month);
-//int selection(char Jan, char Feb, char Mar, char Apr, char May, char June, char July, char Aug, char Sep, char Oct, char Nov, char Dec);
-
+int Monthss (string input, int month);
+int days(int day);
 
 int main()
 {
@@ -25,8 +25,39 @@ cin >> People;
   
 for (int i = 0; i < People; i++)
   {
+  input = Monthss (input, month);
+  cout << endl;
+  day = days(day);
+  cout << endl;
+    
+  selection(day, month);
+  }
+}
 
-  if (input == "Jan"){
+
+
+
+///////////////////////////////////
+       // Enter Day function
+///////////////////////////////////
+int days(int day)
+{
+cout <<"Enter your day" << endl;
+cin >> day;
+cout <<"You entered " << day << endl;
+return day;
+}
+
+
+///////////////////////////////////
+        //Enter Month function
+///////////////////////////////////
+int Monthss (string input, int month)
+{
+cout << "Enter your month" << endl;
+  cin >> input;
+  
+if (input == "Jan"){
   month = 1;
   }
   else if (input == "Feb"){
@@ -62,26 +93,22 @@ for (int i = 0; i < People; i++)
   else if (input == "Dec"){
     month =12;
   }
-
-  selection(day, month);
-  cout << "Enter your month" << endl;
-  cin >> input;
-  cout << endl;
-  cout << "Enter your Day" << endl;
-  cin >> day;
-  cout << endl;
-  selection(day, month);
-    }
+  cout << "responded with " << month <<endl;
+  return month;
 }
 
 
-///////// Variable
+
+
+
+
+/////////////////////////////////////////////////
+            //Switch function
+/////////////////////////////////////////////////
 int selection (int day, int month)
 {
- 
 switch (month)
 {
-
   case 1:
   if ((day < 21) && (month = 1))
   cout << "Capricorn" << endl;
