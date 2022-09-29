@@ -15,7 +15,11 @@ int selection (int day, char month);
 int main()
 {
   
+int month;
+int day; 
 int People;
+
+/*
 char Jan = 1;
 char Feb = 2;
 char Mar = 3;
@@ -28,21 +32,41 @@ char Sep = 9;
 char Oct = 10;
 char Nov = 11;
 char Dec = 12;
+*/
 
+string Jan;
+string Feb;
+string Mar;
+string Apr;
+string May;
+string June;
+string July;
+string Aug;
+string Sep;
+string Oct;
+string Nov;
+string Dec;
+string input;
   
-int month;
-int day;
-  
+
   
 cin >> People;
-
   
 for (int i = 0; i < People; i++)
   {
+  if (input == "Jan"){
+  month = 1;
+    }
+  else if (input == "Feb"){
+  month = 2;
+    }
+  else if (input == "Mar"){
+  month = 3;
+    }
 //  char month;
     
   cout << "Enter your month" << endl;
-  cin >> month;
+  cin >> input;
   cout << endl;
   cout << "Enter your Day" << endl;
   cin >> day;
@@ -51,7 +75,7 @@ for (int i = 0; i < People; i++)
   selection(day, month); 
 
 //cout << result;
-  }
+    }
 }
 
 
@@ -59,6 +83,7 @@ for (int i = 0; i < People; i++)
 int selection (int day, char month)
 {
 char Result;
+/*
 char Jan = 1;
 char Feb = 2;
 char Mar = 3;
@@ -71,7 +96,7 @@ char Sep = 9;
 char Oct = 10;
 char Nov = 11;
 char Dec = 12;
-  
+*/
 //char month;  
 //int day;
   
