@@ -29,8 +29,10 @@ char Oct = 10;
 char Nov = 11;
 char Dec = 12;
 
+  
 int month;
 int day;
+  
   
 cin >> People;
 
@@ -75,91 +77,90 @@ char Dec = 12;
   
 switch (month)
 {
-  case 0:
+
   case 1:
-  if ((day < 22) && (month = 12))
-  cout << "Sagitarious" << endl;
-  else
-  cout << "Capricorn" << endl;
-  break;
-  
-  case 2:
-  if ((day < 20) && (month = 1))
+  if ((day < 21) && (month = 1))
   cout << "Capricorn" << endl;
   else
   cout << "Aqurious" << endl;
   break;
 
-  case 3:
-  if ((day < 19) && (month = 2))
+  case 2:
+  if ((day < 20) && (month = 2))
   cout << "Aqurious" << endl;
   else
   cout << "Pisces" << endl; 
   break;
 
-  case 4:
+  case 3:
   if ((day < 21) && (month = 3))
   cout << "Pisces" << endl;
   else
   cout << "Aries" << endl;
   break;
 
-  case 5:
-  if ((day < 20) && (month = 4))
+  case 4:
+  if ((day < 21) && (month = 4))
   cout << "Aries" << endl;
   else
   cout << "Taurus" << endl;
   break;
 
-  case 6:
+  case 5:
   if ((day < 21) && (month = 5))
   cout << "Taurus" << endl;
   else
   cout << "Gemini" << endl;
   break;
 
-  case 7:
-  if ((day < 21) && (month = 6))
+  case 6:
+  if ((day < 22) && (month = 6))
   cout << "Gemini" << endl;
   else
   cout << "Cancer" << endl;
   break;
 
-  case 8:
+  case 7:
   if ((day < 23) && (month = 7))
   cout << "Cancer" << endl;
   else
   cout << "Leo" << endl;
   break;
   
-  case 9:
+  case 8:
   if ((day < 23) && (month = 8))
   cout << "Leo" << endl;
   else
   cout << "Virgo" << endl;
   break;
 
-  case 10:
-  if ((day < 23) && (month = 9))
+  case 9:
+  if ((day < 22) && (month = 9))
   cout << "Virgo" << endl;
   else
   cout << "Libra" << endl;
   break;
 
-  case 11:
+  case 10:
   if ((day < 23) && (month = 10))
   cout << "Libra" << endl;
   else
   cout << "Scorpio" << endl;
   break;
 
-  case 12:
-  if ((day < 22) && (month = 11))
+  case 11:
+  if ((day < 23) && (month = 11))
   cout << "Scorpio" << endl;
   else
   cout << "Sagittarious" << endl;
   break;
-  
+
+  case 12:
+  if ((day < 22) && (month = 12))
+  cout << "Sagitarious" << endl;
+  else
+  cout << "Capricorn" << endl;
+  break;
   
   
 }
