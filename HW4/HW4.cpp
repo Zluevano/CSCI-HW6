@@ -8,7 +8,7 @@
 using namespace std;
 
 
-int selection (int day, char month);
+int selection (int day, int month);
 //int selection(char Jan, char Feb, char Mar, char Apr, char May, char June, char July, char Aug, char Sep, char Oct, char Nov, char Dec);
 
 
@@ -64,15 +64,16 @@ for (int i = 0; i < People; i++)
   month = 3;
     }
 //  char month;
+  selection(day, month);
     
-  cout << "Enter your month" << endl;
+  //cout << "Enter your month" << endl;
   cin >> input;
-  cout << endl;
-  cout << "Enter your Day" << endl;
+//  cout << endl;
+  //cout << "Enter your Day" << endl;
   cin >> day;
-  cout << endl;
+ // cout << endl;
 
-  selection(day, month); 
+
 
 //cout << result;
     }
@@ -80,7 +81,7 @@ for (int i = 0; i < People; i++)
 
 
 ///////// Variable
-int selection (int day, char month)
+int selection (int day, int month)
 {
 char Result;
 /*
