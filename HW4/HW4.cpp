@@ -1,3 +1,7 @@
+/*
+
+
+*/
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
@@ -23,9 +27,9 @@ cin >> People;
 
 for (int i = 0; i < People; i++)
   {
-  month = Monthss(input, month);
   day = days(day);
-  cout << endl;
+  month = Monthss(input, month);
+  //cout << endl;
 
 
   // I've spent 8 hours on this and it turns out order on the selection part matters what inputs in what order, keep order the same
@@ -41,9 +45,9 @@ for (int i = 0; i < People; i++)
 ///////////////////////////////////
 int days(int day)
 {
-cout <<"Enter your day" << endl;
+//cout <<"Enter your day" << endl;
 cin >> day;
-cout <<"You entered " << day << endl;
+//cout <<"You entered " << day << endl;
 return day;
 }
 
@@ -53,7 +57,7 @@ return day;
 ///////////////////////////////////
 int Monthss (string input, int month)
 {
-cout << "Enter your month" << endl;
+//cout << "Enter your month" << endl;
   cin >> input;
   
 if (input == "Jan"){
@@ -92,7 +96,7 @@ if (input == "Jan"){
   else if (input == "Dec"){
     month =12;
   }
-  cout << "responded with " << month <<endl;
+  //cout << "responded with " << month <<endl;
   return month;
 }
 
@@ -102,20 +106,20 @@ if (input == "Jan"){
 int selection (int day, int month)
 {
 
-cout << month << "month" << endl;
-cout << day << "day" <<endl;
+//cout << month << "month" << endl;
+//cout << day << "day" <<endl;
 switch (month)
 {
   case 1:
   if ((day < 21) && (month == 1))
   cout << "Capricorn" << endl;
   else
-  cout << "Aqurious" << endl;
+  cout << "Aquarius" << endl;
   break;
 
   case 2:
   if ((day < 20) && (month == 2))
-  cout << "Aqurious" << endl;
+  cout << "Aquarius" << endl;
   else
   cout << "Pisces" << endl; 
   break;
@@ -180,12 +184,12 @@ switch (month)
   if ((day < 23) && (month == 11))
   cout << "Scorpio" << endl;
   else
-  cout << "Sagittarious" << endl;
+  cout << "Sagittarius" << endl;
   break;
 
   case 12:
   if ((day < 22) && (month == 12))
-  cout << "Sagitarious" << endl;
+  cout << "Sagittarius" << endl;
   else
   cout << "Capricorn" << endl;
   break;
@@ -199,6 +203,7 @@ return month;
 }
 
 
+// Copy and paste 'bin' //
 /*
 if (input == "Jan"){
   month = 1;
