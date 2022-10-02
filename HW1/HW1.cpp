@@ -1,5 +1,14 @@
+/*
+Programmer: Zachary Luevano
+Date Finished: 9/30/22
+Description: Certainly one of the more complicated programs we've made. Plays a 6 way game of rock paper scissors.
+
+Works by using multiple prototype functions for part is a loop that repeats the entire thing 3 times, second is a while loop that the user has a choice to pick whatever they wish that is connected to a bool function that only proceeds once a proper selection is chosen, this is sent to variable Translate pick that just repeats the choice back to the user done through int 0 being set to the user as declared on line 64 and sending the userpick a char. After that a computer choice is done via a random time selection over 5 cases this is set to 1 for the bool function, the random function picks between all other cases or selections that may be chosen. After that it goes back into the main code and a if statement is made to decide the winner of the game, a counter for both the computer and user was created to count track. After the 3 rounds are finished another random selection based on time is declared if the user wins the game declaring a random winning message or if there is a tie.
+
+*/
 // If user = R AND computer pick = S then cout "You won" or R and R is cout "is
 // tie."
+
 
 #include <cmath>
 #include <cstdlib>

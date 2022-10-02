@@ -1,3 +1,9 @@
+/*
+Programmer: Zachary Luevano
+Date Finished 29 September 2022
+
+Description: Calculates the power in wattage that is ouputted given a set of variables that are inputed into a prototype function powerGen, using a couple of set numbers of q and P the program essentially just takes two inputs enters them in an equation does the math and outputs the results back out.
+*/
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
@@ -51,3 +57,7 @@ cout << "The resulting power is: " << (p * Q * H * g) << " watts";
 
 return Power;
 }
+
+// Case A as in book = 2746800 Watts
+// Case B as in book = 5886000 Watts
+// Both cases are just multiplying p * Q * H * g, cases were verified using a calculator the results do infact calculate correctly.

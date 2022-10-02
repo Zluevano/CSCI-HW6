@@ -24,6 +24,7 @@ double num2, num3;
 double num4, num5;
 double num6, num7;
 cin >> num1 >> num2 >> num3;
+  
 check (num1, num2, num3);
 
 cout << endl;
@@ -31,6 +32,7 @@ cout << endl;
 cout << "Abs Function with precision 2" << endl;
 cout << setprecision(2) << fixed << AbsFunt(num2) << endl << setprecision(4) << fixed;
 
+  
 cout << endl;
   
 cout << "Now testing variable mult, Enter num 4 and num 5: " << endl;
@@ -58,6 +60,8 @@ double AbsFunt (double x)
 {
  if (x <= 0)
   x = -x;
+ else
+   x = x;
 return static_cast<double>(x);
 }
 
